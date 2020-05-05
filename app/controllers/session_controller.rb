@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
     end
  
     def create
-      if session[:name].blank? 
+      if params[:name].blank? 
         
       else 
         session[:name] = params[:name]
